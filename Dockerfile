@@ -14,4 +14,4 @@ RUN npm ci
 COPY . .
 COPY --from=react-builder /app/dist ./tallergithubactions/dist
 EXPOSE 4000
-CMD ["node", "index.js"]
+CMD ["node", "sum.js"]
