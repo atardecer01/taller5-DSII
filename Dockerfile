@@ -1,13 +1,6 @@
-# ---- Construye la aplicación React ----
-FROM node:19-alpine3.16 AS react-builder
-WORKDIR /app
-COPY ./tallergithubactions/package*.json ./
-RUN npm ci
-COPY ./tallergithubactions ./
-RUN npm run build
 
 # ---- Construye la aplicación Express ----
-FROM node:19-alpine3.16
+FROM node:18-alpine3.16
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
