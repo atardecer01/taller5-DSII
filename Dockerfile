@@ -1,10 +1,7 @@
-
-# ---- Construye la aplicación Express ----
-FROM node:18-alpine3.16
-WORKDIR /app
+# ---- Construye la aplicación React ----
+FROM node:18
+WORKDIR /tallergithubactions
 COPY package*.json ./
-RUN npm ci
+RUN npm install
 COPY . .
-COPY --from=react-builder /app/dist ./tallergithubactions/dist
-EXPOSE 4000
-CMD ["node", "sum.js"]
+CMD [ "echo", "funciona" ]
