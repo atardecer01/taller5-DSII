@@ -7,12 +7,12 @@ test('sums two numbers', () => {
  
 });
 
-test('sums two numbers', () => {
+test('mult two numbers', () => {
     expect(mul(1, 2)).toBe(2);
    
   });
 
-  test('sums two numbers', () => {
+  test('div two numbers', () => {
     expect(div(2, 2)).toBe(1);
    
   });
