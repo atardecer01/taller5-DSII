@@ -4,6 +4,15 @@ const div = require('./div');
 
 test('sums two numbers', () => {
   expect(sum(1, 2)).toBe(3);
-  expect(sum(1, 2)).toBe(2);
-  expect(div(2, 2)).toBe(1);
+ 
 });
+
+test('sums two numbers', () => {
+    expect(mul(1, 2)).toBe(2);
+   
+  });
+
+  test('sums two numbers', () => {
+    expect(div(2, 2)).toBe(1);
+   
+  });
